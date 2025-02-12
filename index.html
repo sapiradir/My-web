@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אהבה</title>
+    <style>
+        body {
+            background-color: red;
+            color: white;
+            font-size: 50px;
+            font-weight: bold;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+        .heart {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            margin: 50px auto;
+            transform: rotate(-45deg);
+        }
+        .heart:before, .heart:after {
+            content: "";
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .heart:before {
+            top: -50px;
+            left: 0;
+        }
+        .heart:after {
+            left: 50px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <p>אני אוהב אותך</p>
+    <div class="heart"></div>
+</body>
+</html>
